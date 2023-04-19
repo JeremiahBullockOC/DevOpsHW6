@@ -1,0 +1,13 @@
+<h2>Top Heroes</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of heroes"
+      routerLink="/detail/{{hero.id}}">
+      {{hero.name}}
+  </a>
+</div>
+<h3>DOCKER ONLINE. ALL SYSTEMS NOMINAL.</h3>
+
+<app-hero-search></app-hero-search>
+
+<p>Jeremiah Bullock is no longer banging his head.</p>
+
