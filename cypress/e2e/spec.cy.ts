@@ -13,6 +13,7 @@ describe('dashboard', () => {
     cy.contains('Dashboard');
     cy.get('nav a').eq(1).should('contain', 'Heroes');
     cy.contains('Top Heroes');
+    cy.contains('for now');
   });
 
   it(`has the correct search header`, () => {
@@ -20,16 +21,16 @@ describe('dashboard', () => {
     cy.get('app-hero-search').should('contain', 'Hero Search');
   });
 
-  it(`says hello from Matt`, () => {
-    cy.contains('Hello from Matt');
+  it(`says hello from Jeremiah`, () => {
+    cy.contains('Hello from Jeremiah');
   });
 
   it(`says Jeremiah Bullock`, () => {
     cy.contains('Jeremiah Bullock');
   });
 
-  it(`says banging his head`, () => {
-    cy.contains('banging his head');
+  it(`says managed a simple CI/CD Deployment`, () => {
+    cy.contains('managed a simple CI/CD Deployment');
   });
 
   it('can search', () => {
